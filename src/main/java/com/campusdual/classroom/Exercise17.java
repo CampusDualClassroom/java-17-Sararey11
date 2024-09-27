@@ -2,20 +2,29 @@ package com.campusdual.classroom;
 
 public class Exercise17 {
 	public static int[] createEmptyIntArray(int positions) {
-		return new int[positions];
+		int[] emptyIntArray = new int[positions];
+		return emptyIntArray;
 	}
 
 	public static String[] createInitializedStringArray() {
-        return new String[0];
-    }
+		String[] initializedStringArray = new String[3];
+		initializedStringArray[0] = "1";
+		initializedStringArray[1] = "2";
+		initializedStringArray[2] = "3";
+		return initializedStringArray;
+	}
 
-	public static void populateArray(int[] array, int index, int value) {}
+	public static void populateArray(int[] array, int index, int value) {
+		array[index] = value;
+	}
 
 	public static int arrayLength(int[] array) {
-        return 0;
-    }
+		return array.length;
+	}
 
-	public static void showValue(int[] array, int index) {}
+	public static void showValue(int[] array, int index) {
+		System.out.println(array[index]);
+	}
 
 	public static void main(String[] args) {
 		int[] intArray = createEmptyIntArray(3);
